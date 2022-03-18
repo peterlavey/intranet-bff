@@ -1,7 +1,11 @@
 const pokemonDatasource = (pokeAPI) => {
     return {
-        getList: async() => {
+        getKanto: async() => {
             const {data} = await pokeAPI.get('/pokedex/kanto/')
+            return data
+        },
+        getHoenn: async() => {
+            const {data} = await pokeAPI.get('/pokedex/hoenn/')
             return data
         }
     }

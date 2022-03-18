@@ -1,6 +1,7 @@
 const pokemonRepository = (pokemonDatasource) => {
     return {
-        getList: async () => await pokemonDatasource.getList()
+        getKanto: async () => await pokemonDatasource.getKanto(),
+        getHoenn: async () => await pokemonDatasource.getHoenn(),
     }
 }
 
